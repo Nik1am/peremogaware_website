@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'icons';
+    src: url('Material Icons Sharp-Regular.otf')  format("opentype");
+}
+
+@font-face {
+    font-family: "consolas";
+    src: url("consola.ttf") format("truetype");
+}
+
+* {
+    font-family: "consolas";
+    color: white;
+    background-color: #020202;
+    text-align: center;
+}
+i {
+    color: inherit;
+    background-color: inherit;
+    font-family: "icons";
+    font-style: normal;
+    vertical-align:bottom;
+}
+a::before {
+    content: "> ";
+}
+a:hover::before,a:focus::before {
+    content: " >";
+}
+a{
+    text-align: left;
+    white-space: pre-wrap;
+    text-decoration: none;
+}
+a:focus, a:hover{
+    outline: none;
+    background-color: white;
+    color: black;
+}
+fieldset{
+    display: inline-flex;
+    flex-direction: column;
+}
+pre{
+    max-width: 100%;
+}
+footer{
+    color: #333;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
